@@ -1,68 +1,70 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter",
+  "name": "Rise County Developer Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#1e40af",
+    "light": "#60a5fa",
+    "dark": "#1e3a8a"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Developer Guide",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "setup/requirements",
+              "setup/local-dev"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Project Structure",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "structure/server",
+              "structure/client",
+              "structure/database"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Feature Modules",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "features/characters",
+              "features/inventory",
+              "features/jobs",
+              "features/housing",
+              "features/vehicles"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Internal Tools",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "tools/adminpanel",
+              "tools/debug",
+              "tools/scripts"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Overview",
             "pages": [
-              "api-reference/introduction"
+              "api/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Endpoints",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api/users/get",
+              "api/users/create",
+              "api/items/update",
+              "api/logs/fetch"
             ]
           }
         ]
@@ -71,18 +73,18 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Internal Wiki",
+          "href": "https://your-company.internal/wiki",
+          "icon": "globe"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
+          "anchor": "Discord",
+          "href": "https://discord.gg/yourserver",
           "icon": "slack"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Changelog",
+          "href": "https://yourdomain.dev/changelog",
           "icon": "newspaper"
         }
       ]
@@ -96,20 +98,20 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:devsupport@yourdomain.dev"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Dev Dashboard",
+      "href": "https://dashboard.yourdomain.dev"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/yourorg",
+      "discord": "https://discord.gg/yourserver",
+      "linkedin": "https://linkedin.com/company/yourorg"
     }
   }
 }
